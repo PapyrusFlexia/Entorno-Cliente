@@ -68,9 +68,9 @@ function incluirAnimal(){
     console.log(raza);
     console.log(vida);
     
-    let nuevo = {nombre, especie, raza, vida};
+    let animalAdd = {nombre, especie, raza, vida};
     
-    listadoAnimales.push(nuevo);
+    listadoAnimales.push(animalAdd);
     console.log(listadoAnimales)
 
 }
