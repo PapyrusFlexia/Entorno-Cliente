@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="es_ES">
+    <meta charset="UTF-8">
+    <title> VALIDACIÓN DE FORMULARIO</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="validar.js" cache="false" defer></script>
+</head>
+<body>
+    <div id="ejemploEventos">
+        <h2>VALIDACIÓN DE FORMULARIO</h2>
+        <form id="formulario" method="POST">
+        <div class="elementoFormulario">
+            <div class="etiqueta">
+                <label for="nombre" >NOMBRE:</label>
+            </div>
+            <input id="nombre" />
+        </div>
+        <div class="elementoFormulario">
+            <div class="etiqueta">
+                <label for="apellidos" >APELLIDOS:</label>
+            </div>
+            <input id="apellidos" />
+        </div>
+        <div class="elementoFormulario">
+            <div class="etiqueta">
+                <label for="edad">EDAD:</label>
+            </div>
+            <input id="edad" type="number"/>
+        </div>
+        <div class="elementoFormulario">
+            <div class="etiqueta">
+                <label for="profesion">PROFESIÓN:</label>
+            </div>
+            <select id="profesion">
+                <option value=""></option>
+                <option value="web">NINGUNA</option>
+                <option value="movil">PROFESOR</option>
+                <option value="redes">LIMPIADOR</option>
+                <option value="redes">ADMINISTRADOR</option>   
+                <option value="redes">RECEPCIONISTA</option>       
+            </select>
+        </div>
+        <div class="elementoFormulario">
+                <label>¿Aceptar Política de Cookies?</label>
+            <input type="checkbox" id="terminos" value="1" />
+        </div>
+        <div class="botones">
+            <button >ENVIAR DATOS</button>
+        </div>
+        </form>
+    </div>
+    <div id="divid">
+        
+    </div>
+
+</body>
+</html>
