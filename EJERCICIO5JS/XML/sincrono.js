@@ -18,11 +18,11 @@ function resultadoXML(respuestaXML) {
     }
 
     resultado += "</table>";
-    document.getElementById("asincronaXML").innerHTML = resultado;
+    document.getElementById("sincronaXML").innerHTML = resultado;
 }
 
 function funcionAjaxSincronaXML() {
-    llamadaAsincrona2("servidor.php", "GET", null, "XML", resultadoXML);
+    llamadaSincrona2("servidor.php", "GET", null, "XML", resultadoXML);
 }
 
 function objetoXHR() {
@@ -60,18 +60,18 @@ function funcionAjaxSincrona() {
     llamadaSincrona(document.getElementById("resultadoSincronoXML"), "servidor.php");
 }
 
-function llamadaAsincrona(url) {
+function llamadaSincrona(url) {
     if (miXHR) {
         alert("Comenzamos la peticion AJAX");
         document.getElementById('estado').innerHTML = "";
-        document.getElementById('resultadoAsincrono').innerHTML = "";
+        document.getElementById('resultadoSincrono').innerHTML = "";
         miXHR.open('GET', url, true); 
         miXHR.onreadystatechange = comprobarEstadoPeticion;
         miXHR.send(null);
     }
 }
 
-function llamadaAsincrona2(url, tipo, datos, tipoRespuesta, funcionCallback) {
+function llamadaSincrona2(url, tipo, datos, tipoRespuesta, funcionCallback) {
     miXHR = new objetoXHR();
     if (miXHR) {
         document.getElementById("spinner").style = "display:block";
