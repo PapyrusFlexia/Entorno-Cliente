@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Juegos de Peliculas</title>
+    <script src="css.css"></script>
+    <script src="asincrono.js" defer></script>
+</head>
+
+<body>
+    <div id="spinner" class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+    </div>
+    <div>
+        <form id="formulario" action="">
+            <div>
+                <label>director</label>
+                <input type="text" id="director" name="director">
+                <label>genero</label>
+                <select name="genero" id="genero">
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Fantasia">Fantasia</option>
+                </select>
+                <label for="">largometraje (mas de 1 hora)</label>
+                <input type="checkbox" name="duracion" id="duracion">
+                <label for="">nombre</label>
+                <textarea name="nombre" id="nombre" cols="10" rows="5"></textarea>
+            </div>
+
+            <input type="submit" id="boton" value="enviar" />
+        </form>
+    </div>
+    <div id="respuesta">
+
+    </div>
+
+</body>
+</html>
