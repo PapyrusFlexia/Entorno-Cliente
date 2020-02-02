@@ -54,8 +54,8 @@ function objetoXHR() {
 }
 
 function validarNombre() {
-    let nombreInput = $("#nombredos").val();
-    let input = $("#nombredos");
+    let nombreInput = $("#nombre").val();
+    let input = $("#nombre");
     $.ajax({
         url: "validacion.php",
         data: {
@@ -79,7 +79,7 @@ function validarNombre() {
 
 function validarGenero() {
     let inputgenero = $("#genero").val();
-    let inputnombre = $("#nombredos").val();
+    let inputnombre = $("#nombre").val();
     let Input = $("#genero");
     $.ajax({
         url: "validacion.php",
