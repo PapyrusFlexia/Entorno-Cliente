@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FILTRAR Y AÑADIR JSON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="filtroValidacionAsincronoPOST.js" defer></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <label for="nombreF">Filtrar por nombre</label>
+    <input type="text" id="nombreF" name="nombreF">
+    <button onclick="filtrar()">Filtrar</button>
+    <div id="resultado"></div>
+    <div>
+        <div>
+            <form id="formulario">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+        </div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" onchange="validarNombre()">
+        <div class="error bg-danger"></div>
+        <label for="genero">Genero</label>
+        <input type="text" class="form-control" id="genero" onchange="validarGenero()">
+        <div class="error bg-danger"></div>
+        <label for="desarrollador">Desarrollador</label>
+        <input type="text" class="form-control" id="desarrollador" onchange="validarDesarrollador()">
+        <div class="error bg-danger"></div>
+        <label>Duración: ¿es un juego completo? (Más de una hora)</label>
+        <br>
+        <input class="form-check-input" type="checkbox" id="duracion" onchange="validarDuracion()">
+        <div class="error bg-danger"></div>
+        <br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <div id="resultado"></div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
