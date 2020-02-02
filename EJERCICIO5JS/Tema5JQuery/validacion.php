@@ -52,7 +52,7 @@ if (isset($_POST["nombre"])) {
                 $errores["nombre"] = validarNombre(trim($_POST["nombre"]));
 }
 if (isset($_POST["genero"])) {
-                $errores["genero"] = validarGenero(trim($_POST["genero"]), trim($_POST["genero"]));
+                $errores["genero"] = validarGenero(trim($_POST["genero"]));
 }
 if (isset($_POST["desarrollador"])) {
                 $errores["desarrollador"] = validarDesarrollador(trim($_POST["desarrollador"]));
